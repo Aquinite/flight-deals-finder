@@ -11,7 +11,7 @@ A Python script that checks flight prices from Manila (MNL) to a list of destina
 5. **Sends a separate notification** if no flights are found at all for a destination across every date checked or if no flight matches the desired price set in the Google Sheet. 
 
 ## Other explanations
-- Uses requests-cache as to not use up SERPAPI calls during testing as there is a 250 call limit for free tiers
+- Uses requests-cache as to not use up SerpAPI calls during testing as there is a 250 call limit for free tiers
 
 
 ## Future improvements
