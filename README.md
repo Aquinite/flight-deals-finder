@@ -1,4 +1,4 @@
-# Flight Price Tracker
+# Flight Deals Finder
 
 A Python script that checks flight prices from Manila (MNL) to a list of destinations stored in a Google Sheet, and sends a Telegram alert whenever it finds a price lower than the current recorded low.
 
