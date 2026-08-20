@@ -13,7 +13,7 @@ A Python script that checks flight prices from Manila (MNL) to a list of destina
 
 ## Other explanations
 - Uses requests-cache as to not use up SerpAPI calls during testing as there is a 250 call limit for free tiers
-- Uses sheety to quickly pull data from Google Sheets for usage in the 
+- Uses sheety to quickly pull data from Google Sheets to set parameters of SerpAPI's search
 
 
 ## Future improvements
