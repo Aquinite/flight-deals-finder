@@ -8,7 +8,7 @@ A Python script that checks flight prices from Manila (MNL) to a list of destina
 2. **Searches flights with [SerpAPI's Google Flights endpoint](https://serpapi.com/google-flights-api)** across a set of dates (currently checks flights based on tomorrow's date and a month from tomorrow) for each destination. 
 3. **Finds the cheapest flight per destination** across all dates checked. Flight price is based on a 1-week trip but can be changed inside the code. 
 4. **Compares against the stored lowest price** in the sheet. If the new price is lower, it updates the sheet and sends a Telegram alert with the price, dates, and airline.
-5. **Sends email alerts to different users** New feature: Create a Google form collecting emails of different users. Then, using the emails saved in the Google Form, it will send them the same alert sent on Telegram. Allows other users to receive flight alerts as well. 
+5. **Sends email alerts to signed-up users if new low is found** New feature: Create a Google form collecting emails of different users. Then, using the emails saved in the Google Form, it will send them the same alert sent on Telegram. Allows other users to receive flight alerts as well. 
 6. **Sends a separate Telegram notification** if no flights are found at all for a destination across every date checked or if no flight matches the desired price set in the Google Sheet. 
 
 ## Other explanations
