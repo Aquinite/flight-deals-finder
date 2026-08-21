@@ -41,7 +41,7 @@ class NotificationManager:
 
 
     def no_flights_available_message(self, destination):
-        """Sends the user a message indicate that there is no flight available within the timespan indicated."""
+        """Sends the user a Telegram message indicate that there is no flight available within the timespan indicated."""
         self.tg_message = f"No flights available outbound to {destination} with your chosen dates! Keep waiting."
         self.tg_parameters = {"chat_id": self.chat_id, "text": self.tg_message}
         response = requests.get(url=self.tg_url, params=self.tg_parameters)
@@ -51,7 +51,7 @@ class NotificationManager:
             print(f"Message not sent. Status Code: {status_code}")
 
     def no_lowest_price_message(self, destination):
-        """Sends the user a message indicate that there is no flight available within the timespan indicated for their desired price."""
+        """Sends the user a Telegram message to indicate that there is no flight available within the timespan indicated for their desired price."""
         self.tg_message = f"No flights available with desired price to {destination}! Keep waiting."
         self.tg_parameters = {"chat_id": self.chat_id, "text": self.tg_message}
         response = requests.get(url=self.tg_url, params=self.tg_parameters)

@@ -23,7 +23,7 @@ class FlightSearch:
         self.cheapest_flight_data = None
 
     def search_flights(self):
-        """Searches for available flights based on parameters passed from init then returns a list of the flights available for that date."""
+        """Searches for available flights based on parameters passed from init, then returns a list of the flights available for that date."""
         flight_data = session.get(url=self.serp_endpoint, params=self.serp_parameters)
         flight_data.raise_for_status()
         flight_data_json = flight_data.json()

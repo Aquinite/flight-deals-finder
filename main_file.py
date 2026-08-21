@@ -14,7 +14,7 @@ users=[user_data.get("yourEmail?") for user_data in users_sheet_data.get("users"
 
 #Variables needed
 ORIGIN_AIRPORT = "MNL" #NAIA
-DATE_TOM = datetime.date.today() +datetime.timedelta(days=1)
+DATE_TOM = datetime.date.today() +datetime.timedelta(days=1) #can be customized
 DATES_TO_CHECK = [DATE_TOM + relativedelta(months=i) for i in range(2)] #checks dates within the next month (tom + a month from tom), can be customized
 
 for city in price_sheet_data.get("prices"): #for each row in the sheet_data

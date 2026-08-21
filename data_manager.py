@@ -4,7 +4,7 @@ from requests_cache_manager import session
 load_dotenv()
 
 class SheetDataManager:
-    """This class is responsible for talking to the Google Sheet."""
+    """This class is responsible for talking to the Google Sheet containing the sheet data."""
     def __init__(self):
         self.price_sheet_data = {}
         self.users_sheet_data = {}
@@ -15,7 +15,7 @@ class SheetDataManager:
         self.sheety_headers = {"Authorization": f"Bearer {os.getenv('SHEETY_TOKEN')}"}
 
     def get_price_sheet_data(self):
-        """Pulls the price sheet data currently available from Sheety API."""
+        """Pulls the price sheet data currently available using Sheety API."""
         sheet_data = session.get(url=self.prices_sheety_url, headers=self.sheety_headers)
         sheet_data.raise_for_status()
         self.price_sheet_data = sheet_data.json()
